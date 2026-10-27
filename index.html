@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demokratie am PGN – Lernen und (er)leben</title>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+    body {
+      margin: 0;
+      padding: 30px 15px;
+      background-color: #ffffff;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #2D3748;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .motto-container {
+      max-width: 800px;
+      margin-bottom: 25px;
+    }
+
+    .motto-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #3D5774;
+      margin: 0 0 10px 0;
+      line-height: 1.3;
+    }
+
+    .motto-sub {
+      font-size: 1.05rem;
+      color: #55697d;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .demokratie-rad-container {
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .rad-klick {
+      transition: opacity 0.2s ease, filter 0.2s ease;
+      cursor: pointer;
+    }
+    .rad-klick:hover {
+      opacity: 0.88;
+      filter: drop-shadow(0 4px 8px rgba(61,87,116,0.35));
+    }
+
+    .text-curved-main { font-weight: 700; fill: #ffffff; font-size: 13.5px; letter-spacing: 1.2px; pointer-events: none; }
+    .text-curved-sub  { font-weight: 600; fill: #f0f4f8; font-size: 9.5px; pointer-events: none; }
+    .fuez-curved  { font-size: 8px; font-weight: 700; fill: #3D5774; letter-spacing: 0.4px; pointer-events: none; }
+    .proj-curved  { font-size: 8.5px; font-weight: 700; fill: #203345; letter-spacing: 0.4px; pointer-events: none; }
+    .center-normal-main { font-size: 14.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.8px; text-anchor: middle; pointer-events: none; }
+    .center-normal-sub  { font-size: 12px; font-weight: 700; fill: #EF7D00; letter-spacing: 0.5px; text-anchor: middle; pointer-events: none; }
+
+    .link-box {
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+    .link-box a {
+      color: #3D5774;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MOTTO-BEREICH -->
+  <div class="motto-container">
+    <h1 class="motto-title">„Demokratie ist kein Zustand, sondern eine Praxis: Am PGN lernen, verhandeln und leben wir Verantwortung.“</h1>
+    <p class="motto-sub">Vom Klassenzimmer über die 3-Dutzend-Konferenz bis in die vernetzte Welt – unser Konzept für gelebte Partizipation und Urteilskraft.</p>
+  </div>
+
+  <!-- DEMOKRATIE-RAD (SVG) -->
+  <div class="demokratie-rad-container">
+    <svg viewBox="0 0 720 720" width="100%" height="100%">
+      <defs>
+        <!-- ÄUSSERSTER RING: AKs & PROJEKTE -->
+        <path id="path-proj-nw" d="M 144 144 A 305 305 0 0 1 360 55" fill="none" />
+        <path id="path-proj-n"  d="M 360 55 A 305 305 0 0 1 576 144" fill="none" />
+        <path id="path-proj-no" d="M 576 144 A 305 305 0 0 1 665 360" fill="none" />
+        <path id="path-proj-wn" d="M 55 360 A 305 305 0 0 1 144 144" fill="none" />
+        <path id="path-proj-so" d="M 665 360 A 305 305 0 0 1 576 576" fill="none" />
+        <path id="path-proj-s"  d="M 576 576 A 305 305 0 0 1 360 665" fill="none" />
+        <path id="path-proj-sw" d="M 360 665 A 305 305 0 0 1 144 576" fill="none" />
+        <path id="path-proj-ws" d="M 144 576 A 305 305 0 0 1 55 360" fill="none" />
+
+        <!-- 2. RING: FÜZ -->
+        <path id="path-fuez-nw" d="M 201 201 A 225 225 0 0 1 360 135" fill="none" />
+        <path id="path-fuez-n"  d="M 360 135 A 225 225 0 0 1 519 201" fill="none" />
+        <path id="path-fuez-no" d="M 519 201 A 225 225 0 0 1 585 360" fill="none" />
+        <path id="path-fuez-wn" d="M 135 360 A 225 225 0 0 1 201 201" fill="none" />
+        <path id="path-fuez-so" d="M 585 360 A 225 225 0 0 1 519 519" fill="none" />
+        <path id="path-fuez-s"  d="M 519 519 A 225 225 0 0 1 360 585" fill="none" />
+        <path id="path-fuez-sw" d="M 360 585 A 225 225 0 0 1 201 519" fill="none" />
+        <path id="path-fuez-ws" d="M 201 519 A 225 225 0 0 1 135 360" fill="none" />
+
+        <!-- 3. MITTLERER RING: 4 KATEGORIEN -->
+        <path id="path-mitwirkung-main" d="M 360 215 A 145 145 0 0 1 505 360" fill="none" />
+        <path id="path-unterricht-main" d="M 360 505 A 145 145 0 0 0 505 360" fill="none" />
+        <path id="path-ausser-main"     d="M 360 505 A 145 145 0 0 1 215 360" fill="none" />
+        <path id="path-koop-main"       d="M 215 360 A 145 145 0 0 1 360 215" fill="none" />
+
+        <path id="path-mitwirkung-sub"  d="M 360 240 A 120 120 0 0 1 480 360" fill="none" />
+        <path id="path-unterricht-sub"  d="M 360 480 A 120 120 0 0 0 480 360" fill="none" />
+        <path id="path-ausser-sub"      d="M 360 480 A 120 120 0 0 1 240 360" fill="none" />
+        <path id="path-koop-sub"        d="M 240 360 A 120 120 0 0 1 360 240" fill="none" />
+      </defs>
+
+      <!-- HINTERGRUND -->
+      <circle cx="360" cy="360" r="350" fill="#F4F8F9" stroke="#58AEBA" stroke-width="2" />
+
+      <!-- ÄUSSERSTER RING: SEGMENTE -->
+      <g class="rad-klick" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')">
+        <path d="M 360 360 L 360 15 A 345 345 0 0 1 604 116 Z" fill="#D2E8EB" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 604 116 A 345 345 0 0 1 705 360 Z" fill="#FCE2C8" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 705 360 A 345 345 0 0 1 604 604 Z" fill="#D2E8EB" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 604 604 A 345 345 0 0 1 360 705 Z" fill="#FCE2C8" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 360 705 A 345 345 0 0 1 116 604 Z" fill="#D2E8EB" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 116 604 A 345 345 0 0 1 15 360 Z" fill="#FCE2C8" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 15 360 A 345 345 0 0 1 116 116 Z" fill="#D2E8EB" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 116 116 A 345 345 0 0 1 360 15 Z" fill="#FCE2C8" stroke="#ffffff" stroke-width="2" />
+      </g>
+
+      <!-- BESCHRIFTUNG ÄUSSERER RING -->
+      <text class="proj-curved"><textPath href="#path-proj-n"  startOffset="50%" text-anchor="middle">AK NACHHALTIGKEIT</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-no" startOffset="50%" text-anchor="middle">AK SCHÜLERZEITUNG (WIBA)</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-so" startOffset="50%" text-anchor="middle">AK SCHULE OHNE RASSISMUS</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-s"  startOffset="50%" text-anchor="middle">PLAY FAIR &amp; SCHULSANITÄTER</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-sw" startOffset="50%" text-anchor="middle">„GANZ THEATER“ &amp; KUNST/MUSIK</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-ws" startOffset="50%" text-anchor="middle">AUSTAUSCH: MAYENNE · ROM · BOLTON</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-wn" startOffset="50%" text-anchor="middle">BILINGUAL &amp; SPRACHBEGLEITUNG</textPath></text>
+      <text class="proj-curved"><textPath href="#path-proj-nw" startOffset="50%" text-anchor="middle">GIRLS‘ DAY AKADEMIE &amp; BERUFSNETZ</textPath></text>
+
+      <!-- 2. RING: FÜZ -->
+      <g class="rad-klick" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')">
+        <path d="M 360 360 L 360 102 A 258 258 0 0 1 542 178 Z" fill="#E1F0F2" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 542 178 A 258 258 0 0 1 618 360 Z" fill="#FDEBD9" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 618 360 A 258 258 0 0 1 542 542 Z" fill="#E1F0F2" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 542 542 A 258 258 0 0 1 360 618 Z" fill="#FDEBD9" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 360 618 A 258 258 0 0 1 178 542 Z" fill="#E1F0F2" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 178 542 A 258 258 0 0 1 102 360 Z" fill="#FDEBD9" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 102 360 A 258 258 0 0 1 178 178 Z" fill="#E1F0F2" stroke="#ffffff" stroke-width="2" />
+        <path d="M 360 360 L 178 178 A 258 258 0 0 1 360 102 Z" fill="#FDEBD9" stroke="#ffffff" stroke-width="2" />
+      </g>
+
+      <text class="fuez-curved"><textPath href="#path-fuez-n"  startOffset="50%" text-anchor="middle">BNE &amp; GLOBALES LERNEN</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-no" startOffset="50%" text-anchor="middle">MEDIENBILDUNG</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-so" startOffset="50%" text-anchor="middle">WERTEBILDUNG</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-s"  startOffset="50%" text-anchor="middle">SOZIALES LERNEN</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-sw" startOffset="50%" text-anchor="middle">KULTURELLE BILDUNG</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-ws" startOffset="50%" text-anchor="middle">INTERKULTURELLE BILDUNG</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-wn" startOffset="50%" text-anchor="middle">SPRACHLICHE BILDUNG</textPath></text>
+      <text class="fuez-curved"><textPath href="#path-fuez-nw" startOffset="50%" text-anchor="middle">VERBRAUCHERBILDUNG</textPath></text>
+
+      <!-- 3. MITTLERER RING: 4 KATEGORIEN -->
+      <path class="rad-klick" d="M 360 360 L 360 180 A 180 180 0 0 1 540 360 Z" fill="#EF7D00" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')" />
+      <path class="rad-klick" d="M 360 360 L 540 360 A 180 180 0 0 1 360 540 Z" fill="#3D5774" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')" />
+      <path class="rad-klick" d="M 360 360 L 360 540 A 180 180 0 0 1 180 360 Z" fill="#28424B" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')" />
+      <path class="rad-klick" d="M 360 360 L 180 360 A 180 180 0 0 1 360 180 Z" fill="#58AEBA" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')" />
+
+      <text class="text-curved-main"><textPath href="#path-mitwirkung-main" startOffset="50%" text-anchor="middle">MITWIRKUNG</textPath></text>
+      <text class="text-curved-sub"><textPath href="#path-mitwirkung-sub"   startOffset="50%" text-anchor="middle">3-Dutzend &amp; SMV</textPath></text>
+
+      <text class="text-curved-main"><textPath href="#path-unterricht-main" startOffset="50%" text-anchor="middle">UNTERRICHTLICHES</textPath></text>
+      <text class="text-curved-sub"><textPath href="#path-unterricht-sub"   startOffset="50%" text-anchor="middle">Leitfächer &amp; FÜZ</textPath></text>
+
+      <text class="text-curved-main" style="font-size: 11px; letter-spacing: 0.5px;"><textPath href="#path-ausser-main" startOffset="50%" text-anchor="middle">AUSSERUNTERRICHTLICHES</textPath></text>
+      <text class="text-curved-sub"><textPath href="#path-ausser-sub"       startOffset="50%" text-anchor="middle">Fahrten &amp; Gedenken</textPath></text>
+
+      <text class="text-curved-main"><textPath href="#path-koop-main"       startOffset="50%" text-anchor="middle">KOOPERATIONEN</textPath></text>
+      <text class="text-curved-sub"><textPath href="#path-koop-sub"         startOffset="50%" text-anchor="middle">Partner &amp; Netzwerke</textPath></text>
+
+      <!-- 4. ZENTRUM -->
+      <circle class="rad-klick" cx="360" cy="360" r="95" fill="#3D5774" stroke="#ffffff" stroke-width="5" onclick="window.open('https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19', '_blank')" />
+      <text x="360" y="350" class="center-normal-main">DEMOKRATIE am PGN</text>
+      <text x="360" y="374" class="center-normal-sub">lernen und (er)leben</text>
+    </svg>
+  </div>
+
+  <div class="link-box">
+    <a href="https://mz-nuernberg.taskcards.app/#/board/cdfc0a8c-8632-4f80-a16f-f8f33f460d5c?token=043daa88-1d6a-4311-880c-2aea0112fe19" target="_blank" rel="noopener noreferrer">
+      🔗 Hier klicken, um das Projekt-Board auf TaskCards direkt zu öffnen
+    </a>
+  </div>
+
+</body>
+</html>
